@@ -13,8 +13,6 @@ const ProjectsPage = () => {
     const fetchProjects = async () => {
       try {
         const data = await apiFetch("/projects");
-        console.log("toto");
-
         setProjects(data);
       } catch (err) {
         setError(err.message);

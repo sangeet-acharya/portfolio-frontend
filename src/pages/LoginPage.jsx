@@ -12,7 +12,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext.js";
 
 const LoginPage = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const apiFetch = useFetch();
 

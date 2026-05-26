@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import ProjectsPage from "./pages/ProjectsPage";
+import ProjectsPage from "./pages/ProjectsPage.jsx";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import LoginPage from "./pages/LoginPage";
 import AdminPage from "./pages/admin/AdminPage";
@@ -10,10 +10,12 @@ import EditProjectPage from "./pages/admin/EditProjectPage";
 import PrivateRoute from "./components/PrivateRoute";
 import Navbar from "./components/Navbar";
 import { AuthProvider } from "./context/AuthProvider.jsx";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <>
+      <Toaster richColors position="top-right" />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
