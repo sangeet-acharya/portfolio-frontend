@@ -127,7 +127,7 @@ const HomePage = () => {
               },
               {
                 title: "Database",
-                items: ["MySQL", "MariaDB"],
+                items: ["MySQL", "MariaDB", "Prisma"],
               },
             ].map((block, i) => (
               <motion.div
